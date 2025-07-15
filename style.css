@@ -3,6 +3,11 @@
   src: url('fonts/Roboto-VariableFont_wdth,wght.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff');
+}
+
 h1{
     color: pink;
     font-family: 'Roboto';
