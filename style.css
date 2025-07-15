@@ -8,6 +8,10 @@
   src: url('fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff');
 }
 
+body{
+    padding: 24px;
+}
+
 h1{
     color: pink;
     font-family: 'Roboto';
