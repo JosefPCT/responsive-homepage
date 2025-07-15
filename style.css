@@ -13,3 +13,10 @@ h1{
     font-family: 'Roboto';
 }
 
+img{
+    width: 100%;
+}
+
+a img{
+    width: 24px;
+}
