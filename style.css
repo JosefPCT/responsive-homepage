@@ -8,13 +8,77 @@
   src: url('fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff');
 }
 
-body{
-    padding: 24px;
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+  font-size: 24px;
+}
+
+
 
 h1{
     color: pink;
     font-family: 'Roboto';
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  font-size: 24px;
 }
 
 img{
@@ -22,5 +86,51 @@ img{
 }
 
 a img{
-    width: 24px;
+    width: 48px;
+}
+
+header{
+  padding: 24px;
+  background: linear-gradient(330deg, transparent 72%, rgb(59, 59, 230) 1%);
+}
+
+section{
+  /* padding: 24px; */
+}
+
+.socials{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card{
+  margin: 24px;
+  background: blue;
+}
+
+.project-socials{
+  display: flex;
+}
+
+.project-socials a img{
+  width: 32px;
+}
+
+.work-img{
+}
+
+.img-placeholder{
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+
+.project-header{
+  display: flex;
+  padding: 24px;
+}
+
+h3{
+  flex: 1;
 }
