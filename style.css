@@ -62,24 +62,27 @@ h1, h2, h3, h4, h5, h6 {
 /* General */
 
 body{
+    font-size: 32px;
     display: flex;
     flex-direction: column;
     gap: 124px;
+    /* align-items: center; */
+    
 }
 
 h2{
-  font-size: 4em;
+  font-size: 1.4em;
   text-align: center;
   font-weight: normal;
 }
 
 h3{
-  font-size: 2em;
+  font-size: 1.2em;
   font-family: "PlayfairDisplay";
 }
 
 p {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 img{
@@ -93,7 +96,7 @@ a img{
 /* Header Section */
 
 header{
-  padding: 12px;
+  padding: 24px;
   background: linear-gradient(330deg, transparent 75%, rgb(53, 130, 194) 0%);
 }
 
@@ -108,11 +111,11 @@ header .img-container{
 .img-container figcaption{
   position: absolute;
   bottom: 3px;
-  font-size: 7em;
+  font-size: 3em;
   padding: 8px;
   padding-bottom: 0px;
   color: white;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 
 .about-me{
@@ -129,20 +132,27 @@ header .img-container{
 }
 
 .socials{
+  /* background-color: red; */
   margin-top:12px;
   display: flex;
   gap: 24px;
   justify-content: center;
 }
 
+
+
 /* Project Section */
+
+.work-section{
+  padding: 24px;
+}
 
 section h2{
   font-family: "PlayfairDisplay";
 }
 
 section h3{
-  padding-left: 24px;
+  padding-left: 12px;
   font-weight: lighter;
 }
 
@@ -150,14 +160,18 @@ section h3{
   display: flex;
   flex-direction: column; 
   gap: 48px;
+  justify-content: center;
+  /* margin: 24px; */
 }
 
 .card{
-  margin: 24px;
+  
   flex: 1;
+  /* margin-left: 15px; */
   /* background: blue; */
   /* border: 1px solid grey; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .card p{
@@ -173,7 +187,7 @@ section h3{
 }
 
 .img-placeholder p{
-  font-size: 3em;
+  font-size: 1.5em;
   color: white;
   text-align: center;
   font-family: "PlayfairDisplay";
@@ -216,6 +230,7 @@ section h3{
 
 h3{
   flex: 3;
+  
 }
 
 
@@ -223,6 +238,7 @@ h3{
   display: flex;
   gap: 24px;
   flex: 1;
+  
 }
 
 .project-socials a img{
@@ -231,7 +247,7 @@ h3{
 
 .description-container{
   height: 200px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
   color: grey;
   font-size: .8em;
 }
@@ -241,25 +257,25 @@ h3{
 section.contact{
   background-color: rgb(53, 130, 194);
   color: white;
-
+  
 }
 
 .contact h2{
-  font-size: 4em;
+  font-size: 2em;
   padding: 24px;
 }
 
 .contact-container{
   font-family: "Roboto";
   display: flex;
-  padding: 24px;
+  padding: 32px;
   font-size: .8em;
   flex-direction: column;
   gap: 3em;
 }
 
 .contact-container>p:first-child{
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 /* address{
@@ -268,4 +284,31 @@ section.contact{
 
 .contact .img-container{
   margin-top: 96px;
+}
+
+/* Tablet View */
+
+@media screen and (min-width: 600px) and (max-width: 1199px){
+  body{
+    /* background-color: red; */
+  }
+
+  h3{
+    font-size: .8em;
+  }
+
+ /* Project Section*/
+ .work-cards{
+  display: flex;
+  /* gap: 48px; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 0px; */
+  margin: 12px;
+ }
+ .card{
+  margin: 24px;
+ }
+
+
 }
