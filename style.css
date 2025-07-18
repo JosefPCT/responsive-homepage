@@ -339,6 +339,10 @@ svg {
   padding: 15px;
  }
 
+ .about-me .socials{
+  display: none;
+ }
+
  /* Project Section*/
  .work-cards{
   display: flex;
