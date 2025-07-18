@@ -297,6 +297,43 @@ section.contact{
     font-size: .8em;
   }
 
+
+  /* Header Section */
+  header{
+    background: linear-gradient(330deg, transparent 60vw, rgb(53, 130, 194) 0%);
+  }
+
+   header .img-container{
+  /* position: absolute; */
+ }
+
+ .img-container{
+  width: 50%;
+  float: left;
+ }
+
+ .img-container figcaption{
+  position: absolute;
+  /* float: right; */
+  top: 0px;
+  left: 40vw;
+  font-size: calc(3vw + 1em);
+  padding: 8px;
+  padding-bottom: 0px;
+  color: white;
+  width: 100%;
+  /* background-color: red; */
+}
+
+ .about-me{
+  /* display: flex; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 6vw;
+  margin-top: 12vw;
+  background-color: white;
+  padding: 15px;
+ }
+
  /* Project Section*/
  .work-cards{
   display: flex;
@@ -310,5 +347,76 @@ section.contact{
   margin: 24px;
  }
 
+ /* Contant Section */
+/* 
+ .contact{ 
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: center;
+ }
+
+ h2{
+  flex-basis: 100%;
+ }
+
+ .contact-container{
+  flex: 1;
+  background-color: red;
+  padding-top: 100px;
+  width: 50%;
+  height: 50%;
+ }
+
+ .contact .img-container{
+  flex: 1;
+  background-color: yellow;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+ }  */
+
+  .contact{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .contact h2{
+    padding: 0px;
+    font-size: 1em;
+    text-align: left;;
+  }
+  
+  .contact p{
+    font-size: .7em;
+  }
+
+  .contact-container p:first-child{
+    font-size: .7em;
+  }
+
+  .contact-main-container{
+    /* background-color: red; */
+    padding: 30px;
+    margin: 50px;
+    margin-top: 100px;
+  }
+
+  .contact-container{
+    padding: 0px;
+    gap: 1em;
+  }
+
+  .socials{
+    justify-content: flex-start;
+  }
+
+  .contact .img-container{
+    padding: 25px;
+    margin: 15px;
+  }
 
 }
