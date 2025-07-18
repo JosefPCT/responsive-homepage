@@ -100,7 +100,7 @@ header{
   background: linear-gradient(330deg, transparent 75%, rgb(53, 130, 194) 0%);
 }
 
-header .img-container{
+.img-container{
   margin: 24px;
 }
 
@@ -291,57 +291,21 @@ svg {
   display: none;
 }
 
-/* Tablet View */
+/* __________________________________________________________________________________________________________________ */
+/* Tablet And Desktop View*/
+/* For rules that can apply to both tablet and desktop view */
 
-@media screen and (min-width: 600px) and (max-width: 1199px){
-  body{
+@media screen and (min-width: 600px){
+
+  /* General */
+
+    body{
     /* background-color: red; */
   }
 
   h3{
     font-size: .8em;
   }
-
-
-  /* Header Section */
-  header{
-    background: linear-gradient(330deg, transparent 60vw, rgb(53, 130, 194) 0%);
-  }
-
-   header .img-container{
-  /* position: absolute; */
- }
-
- .img-container{
-  width: 50%;
-  float: left;
- }
-
- .img-container figcaption{
-  position: absolute;
-  /* float: right; */
-  top: 0px;
-  left: 40vw;
-  font-size: calc(3vw + 1em);
-  padding: 8px;
-  padding-bottom: 0px;
-  color: white;
-  width: 100%;
-  /* background-color: red; */
-}
-
- .about-me{
-  /* display: flex; */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-left: 6vw;
-  margin-top: 12vw;
-  background-color: white;
-  padding: 15px;
- }
-
- .about-me .socials{
-  display: none;
- }
 
  /* Project Section*/
  .work-cards{
@@ -358,7 +322,7 @@ svg {
   flex-basis: 30vw;
  }
 
- /* Contant Section */
+ /* Contact Section */
 /* 
  .contact{ 
   display: grid;
@@ -389,7 +353,7 @@ svg {
   height: 50%;
  }  */
 
-  .contact{
+    .contact{
     display: flex;
     align-items: center;
     gap: 0px;
@@ -469,6 +433,112 @@ svg {
   .contact .img-container{
     padding: 25px;
     margin: 15px;
+  }
+
+}
+
+/* __________________________________________________________________________________________________________________ */
+/* Tablet View */
+
+@media screen and (min-width: 600px) and (max-width: 1199px){
+
+
+  /* Header Section */
+  header{
+    background: linear-gradient(330deg, transparent 60vw, rgb(53, 130, 194) 0%);
+  }
+
+   header .img-container{
+  /* position: absolute; */
+ }
+
+ .img-container{
+  width: 50%;
+  float: left;
+ }
+
+ .img-container figcaption{
+  position: absolute;
+  /* float: right; */
+  top: 0px;
+  left: 40vw;
+  font-size: calc(3vw + 1em);
+  padding: 8px;
+  padding-bottom: 0px;
+  color: white;
+  width: 100%;
+  /* background-color: red; */
+}
+
+ .about-me{
+  /* display: flex; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 6vw;
+  margin-top: 12vw;
+  background-color: white;
+  padding: 15px;
+ }
+
+ .about-me .socials{
+  display: none;
+ }
+
+}
+
+/* ____________________________________________________________________________________ */
+/* Desktop View*/
+
+@media screen and (min-width: 1200px){
+  p{
+    /* font-size: calc(.2vw + .3em); */
+    font-size: .7em;
+  }
+
+  h2{
+    font-size: .9em;
+    text-align: left;
+  }
+
+  a img{
+    width: 32px;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+  }
+
+
+  .img-container{
+    min-width: 15%;
+    max-width: 50%;
+    margin: 0px;
+  }
+
+  .img-container figcaption{
+    font-size: calc(2vw + 1em);
+    color: white;
+  }
+
+  .about-me{
+    background-color: white;
+    /* max-height: 90%; */
+    /* min-height: 90%; */
+    /* width: 100%; */
+    /* min-width: 50%; */
+    max-width: 70%;
+    /* height: 70%; */
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 24px;
+    margin-left: 0px;
+  }
+
+  .about-me .socials{
+    padding: 24px;
+    
+    justify-content: flex-end;
   }
 
 }
