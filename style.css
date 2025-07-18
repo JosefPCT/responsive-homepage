@@ -346,14 +346,16 @@ svg {
  /* Project Section*/
  .work-cards{
   display: flex;
-  /* gap: 48px; */
+  gap: 28px;
   flex-direction: row;
   flex-wrap: wrap;
   /* margin: 0px; */
-  margin: 12px;
+  margin: 24px;
  }
  .card{
-  margin: 24px;
+  /* margin: 24px; */
+  margin-top: 8px;
+  flex-basis: 30vw;
  }
 
  /* Contant Section */
